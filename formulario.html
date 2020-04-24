@@ -19,17 +19,34 @@
     <button>divicion</button><br>
 
      <label for="resultado">este es el resultado</label>
-    <input type="number" id="resultado" name="ressultado">
+     <input type="number" id="resultado" name="resultado">
 
     <script>
         function sumar(){
-        var a = document.getElementById("a").vuale;
-        var b = document.getElementById("b").vuale;
-        var ressultado;
+         var a = document.getElementById("a").value;
+         var b = document.getElementById("b").value;
+         var resultado;
 
-        var ressultado = a + b;
+         if(a == ""){
+             a = 0;
+         }else{
+            a = parseInt(a);
+         }
 
-        document.getElementById("resultado"). vuale = ressultado
+         if(b == ""){
+             b = 0;
+         }else{
+            b = parseInt(b);
+         }
+
+
+
+        
+         
+
+         var resultado = a + b;
+
+         document.getElementById("resultado"). value = resultado
         }
        
 
