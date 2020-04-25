@@ -7,20 +7,20 @@
 </head>
 <body>
     <h1>operaciones basicas</h1>
-
+     <!-- se creo las tablas para capturar las 2 variable-->
     <label for="a">ingrese el primer numero </label>
     <input type="number" id="a" name="a"><br>
     <label for="b">ingrese el segundo numero </label>
     <input type="number" id="b" name="b"><br>
-
+     <!-- se colocaron los botones correspondientes para dichas operaciones-->
     <button onclick="sumar()">sumar</button><br>
     <button onclick="resta()">resta</button><br>
     <button onclick="multiplicacion()">multiplicacion</button><br>
     <button onclick="divicion()">divicion</button><br>
-
+     <!--se creo otra tabla para ver el resultado de cada valor-->
      <label for="resultado">este es el resultado</label>
      <input type="number" id="resultado" name="resultado">
-
+     <!--se realizo el script para hacer funcionar la suma de los valores-->
     <script>
         function sumar(){
          var a = document.getElementById("a").value;
@@ -47,7 +47,7 @@
 
 
     </script>
-
+    <!--se hizo una script para la realizacion de la resta-->
 <script>
     function resta(){
      var a = document.getElementById("a").value;
@@ -70,11 +70,12 @@
 
      document.getElementById("resultado"). value = resultado
     }
-   
+    
 
 
-</script>
-<script>
+   </script>
+   <!-- aqui se realizo nuevamente para la multiplicacion-->
+   <script>
     function multiplicacion(){
      var a = document.getElementById("a").value;
      var b = document.getElementById("b").value;
@@ -97,6 +98,7 @@
      document.getElementById("resultado"). value = resultado
     }
    </script>
+   <!--por ultimo para la division-->
     <script>
         function divicion(){
          var a = document.getElementById("a").value;
